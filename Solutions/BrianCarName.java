@@ -19,7 +19,7 @@ public class BrianCarName {
 	 * @return true or false
 	 */
 	public String checkBrianCarName(String inputString) {
-		String isBrianCarNameOk = "OK";
+		String carNameStatus = "OK";
 		HashMap<Character, Integer> charCountMap = new HashMap<Character, Integer>();
 		
 		if (inputString != null && !inputString.isEmpty()) {
@@ -33,14 +33,14 @@ public class BrianCarName {
 					if (firstOccr == -1) {
 						firstOccr = i;
 					} else if (firstOccr != i) {
-						isBrianCarNameOk = "Not OK";
+						carNameStatus = "Not OK";
 						break;
 					}
 				}
 			} else {
-				isBrianCarNameOk = "Not OK";
+				carNameStatus = "Not OK";
 			}
-			return isBrianCarNameOk;
+			return carNameStatus;
 		} else {
 			return "Invalid Input";
 		}

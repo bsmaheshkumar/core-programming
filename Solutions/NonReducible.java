@@ -68,7 +68,7 @@ public class NonReducible {
 				}
 			}
 			nonReducible.setOperationCount(operationCount);
-			nonReducible.setReducedString(reducibleString);
+			nonReducible.setReducedString(stringToBeReduced);
 		}
 		else {
 			nonReducible.setOperationCount(0);

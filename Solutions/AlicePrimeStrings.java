@@ -49,7 +49,7 @@ public class AlicePrimeStrings {
 	 * @param number to be checked for prime
 	 * @return true if prime false otherwise
 	 */
-	private static boolean isPrime(int number) {
+	private boolean isPrime(int number) {
 		if (number <= 1)
 			return false;
 		int limit = (int) Math.sqrt(number);
